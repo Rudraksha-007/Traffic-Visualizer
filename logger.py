@@ -75,7 +75,7 @@ def visualize():
 
         plt.tight_layout() 
         plt.pause(1)
-        plt.ylim(0,max(sizes)*1.2)
+        plt.ylim(0,max(values) *1.2)
 
 if __name__ == "__main__":
     t_capture = threading.Thread(target=capture_packets, daemon=True)
